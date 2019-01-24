@@ -3,12 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SimpleMultiActivityApp"
              x:Class="SimpleMultiActivityApp.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+        <Image HorizontalOptions="FillAndExpand"
+               VerticalOptions="FillAndExpand"
+               Source="compass.png"/>
+
+        <Image HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Source="arrow.png"
+               x:Name="ImageArrow"/>
+
+        <Label Grid.Row="1"
+               x:Name="LabelInfo"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+    </Grid>
 
 </ContentPage>
