@@ -5,6 +5,8 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
+using Xamarin.Essentials;
+
 namespace SimpleMultiActivityApp.iOS
 {
     public class Application

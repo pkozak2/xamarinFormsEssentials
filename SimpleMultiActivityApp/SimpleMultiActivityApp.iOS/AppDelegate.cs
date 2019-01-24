@@ -5,6 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
+using Xamarin.Essentials;
 namespace SimpleMultiActivityApp.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
